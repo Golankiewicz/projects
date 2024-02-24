@@ -1,0 +1,94 @@
+
+
+h1{
+    color: #01f;
+    font-family:"Anta";
+    font-size: 36px;
+    font-weight: 700;
+    
+  }
+  h2, h3{
+    width: 100%;
+    font-family:"Kode Mono";
+  }
+  h2{
+    font-weight: 500;
+    font-size: 28px;
+  }
+  h3{
+    font-weight: 400;
+    font-size:24px;
+  }
+  p, li,a{
+    font-family:"Roboto";
+    font-weight:300;
+     color: black;
+    font-size: 18px;
+  }
+  button a{
+    font-weight: bold;
+  }
+  button {
+    display: block;
+    background-color:#ffd900; 
+   
+    border-radius: 10px;
+    
+  }
+  navigation button{
+    display: inline-block;
+  }
+  .container{
+    border: 2px solid blue;
+    padding:10px;
+    width: 100%;
+    margin: 5px;
+  }
+  .color-container{
+    width:30%;
+   
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    text-align:center;
+   
+  }
+  .red{
+    background-color: #f40;
+   
+  }
+  .green{
+     background-color: #8cff00;
+  }
+  .yellow{
+    background-color:#ffd900;
+  }
+  .blue{
+    background-color:#01f;
+   
+  }
+  .purple{
+    background-color:#ff0095;
+  }
+  .font-container{
+    width:45%;
+    display: inline-block;
+  }
+  .underline{
+    text-decoration: underline;
+  }
+  .roboto{
+    font-family: "Roboto";
+  }
+  .anta{
+    font-family: "Anta";
+  }
+  .kode-mono{
+    font-family: "Kode Mono";
+  }
+  .italic{
+    font-style: italic;
+  }
+  .bold{
+    font-weight: bold;
+  }
