@@ -12,6 +12,7 @@
   border: 0;
   box-sizing: border-box;
 }
+
 h2 {
   font-family: Helvetica, sans-serif;
   font-size: 30px;
@@ -34,6 +35,7 @@ h5 {
   font-size: 18px;
   font-weight: bolder;
 }
+
 nav {
   height: 69px;
   padding-left: 10px;
@@ -68,16 +70,18 @@ nav {
 }
 
 main {
-  margin-top: 70px;
+ 
+ margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  width: 100%;
+ 
+  
 }
 #mission {
   height: 700px;
-  width: 1200px;
+  width: 1100px;
   background-image: url(Images/img-mission-background.jpg);
   display: flex;
   align-items: center;
@@ -134,8 +138,8 @@ main {
   padding: 15px;
 }
 .locations {
-  height: 500px;
-  width: 1200px;
+  min-height: 500px;
+  width: 1100px;
   background-image: url(Images/img-locations-background.jpg);
   margin-top: 40px;
   display: flex;
@@ -145,11 +149,11 @@ main {
 }
 
 .locations-container {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   background: rgba(0, 0, 0, 0);
-  width: 980px;
+  width: 90vw;
 }
 .location {
   height: 300px;
@@ -157,6 +161,7 @@ main {
   background-color: black;
   text-align: center;
   line-height: 75px;
+  margin:20px;
 }
 .locations h2 {
   margin-bottom: 20px;
@@ -172,6 +177,6 @@ main {
 }
 .footer-down {
   text-align: left;
-  padding: 20px;
+  padding: 60px;
   opacity: 0.7;
 }
