@@ -60,13 +60,14 @@ nav {
 .buttons {
   display: inline-flex;
   justify-content: space-around;
-  width: 30%;
+ 
   padding-right: 10px;
 }
 
 .buttons a {
   font-size: 22px;
   font-family: Helvetica, sans-serif;
+  padding: 0 10px;
 }
 
 main {
@@ -76,25 +77,33 @@ main {
   flex-direction: column;
   justify-items: center;
   align-items: center;
- 
+
   
 }
+
 #mission {
   height: 700px;
-  width: 1100px;
+ max-width: 1200px;
   background-image: url(Images/img-mission-background.jpg);
   display: flex;
   align-items: center;
+  justify-content: center;
+
 }
 .mission-des {
-  display: block;
-  height: 80px;
-  width: 100%;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  min-height: 80px;
+  max-width: 100%;
   background-color: black;
   text-align: center;
   line-height: 50px;
   opacity: 1;
+  padding: 0 50px;
 }
+
 #tea-of-the-month {
   width: 1000px;
   min-height: 450px;
@@ -112,6 +121,7 @@ main {
   padding-top: 20px;
   
 }
+
 
 .images-container {
   
@@ -162,6 +172,7 @@ main {
   text-align: center;
   line-height: 75px;
   margin:20px;
+  opacity: 1;
 }
 .locations h2 {
   margin-bottom: 20px;
@@ -173,10 +184,10 @@ main {
   width: 100%;
   text-align: center;
   line-height: 70px;
-  opacity: 0.7;
+ 
 }
 .footer-down {
   text-align: left;
-  padding: 60px;
-  opacity: 0.7;
+  padding: 35px 20px;
+  
 }
