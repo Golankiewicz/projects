@@ -2,6 +2,8 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    color: white;
+    font-family: 'Lexend';
    
 }
 
@@ -20,19 +22,6 @@
   
 }
 
-
-
-#portfolio{
-    width: 100%;
-    display: inline-flex;
-    height: 800px;
-    justify-content: center;
-    align-items: center;
-      
-    flex-wrap: wrap;
-   
- 
-}
 
 .banner{
     width: 100%;
@@ -56,17 +45,20 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-  
+   
    
 }
 
-header h1 {
+h1 {
     text-align: center;
     font-size: 3em;
+   
+
+}
+h2 {
+    text-align: center;
+    font-size: 2em;
+   
 
 }
 
@@ -88,8 +80,7 @@ list-style: none;
 }
 
 nav ul li {
- width: 300px;
- 
+ width: 200px;
  text-align: center;
  font-size: 2rem;
 }
@@ -99,7 +90,7 @@ nav a{
 }
 
 main{
-    margin: 200px auto;
+    margin: 0 auto;
     display: block;
     
 }
@@ -108,11 +99,96 @@ main{
 .container{
     width: 200px;
     height: 200px;
-    border: 3px solid red;
+    text-align: center;
+    padding:10px;
+    display: block;
+   
 }
 
-#portfolio .container img{
+#portfolio-container, #staff{
+    background-color: navy;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   
+
+}
+ #staff{
+    background-image: url("./images/yacht-802319_1280.jpg");
+   
+   }
+
+   #staff .container{
+    width: 400px;
+   height: 400px;
+   
+   
+   }
+
+   #staff .container h3{
+    color: black;
+    font-size: 1.8rem;
+    
+   }
+
+   #staff .container h4{
+    color: black;
+    font-size: 1.5rem;
+    
+   }
+   #staff .container img{
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+   
+   }
+   footer{
+    background-color: black;
+   }
+
+
+
+#portfolio-container h1{
+    padding:1em;
+}
+
+
+
+
+.portfolio{
+    width: 100%;
+    display: inline-flex;
+    min-height: 400px;
+    justify-content: center;
+    align-items: center;
+      
+    flex-wrap: wrap;
+   
+ 
+}
+
+.portfolio .container img{
 width: 100%;
-height: 100%;
+height: 90%;
+}
+
+
+
+footer{
+    text-align: center;
+   
+
+}
+footer p{
+    font-size: 1.5rem;
+}
+footer p+p+p{
+    padding-top: 1.5rem;
+}
+
+footer h2{
+    padding: 1rem;
 }
 
