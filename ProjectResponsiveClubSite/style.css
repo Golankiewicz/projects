@@ -1,3 +1,125 @@
-body{
-    background-color: brown;
+* {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: yellow;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend";
+}
+
+ul {
+  display: flex;
+  text-decoration: underline;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+li {
+  padding: 0 2.5rem;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: brown;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.banner {
+  min-height: 36rem;
+  background-color: aquamarine;
+  padding-top: 13vw;
+}
+.intro {
+  height: auto;
+  background-color: brown;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.intro h1{
+   font-size: 4rem;
+   text-align: center;
+}
+
+.summary {
+  margin-top: 10rem;
+  min-height: 7rem;
+  background-color: brown;
+  width: 100vw;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.summary a {
+  font-size: 1rem;
+}
+p {
+  font-size: 1rem;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.photos img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  padding: 1rem;
+  @media screen and (max-width: 1024px) {
+    width: 100vw;
+    padding: 0 0 1rem 0;
+  }
+}
+
+.testimony {
+  margin-top: 1rem;
+  min-height: 7rem;
+  background-color: brown;
+  width: 100vw;
+  padding: 1rem;
+ 
+}
+
+.testimony p{
+   padding: 1rem;
+}
+.meetup{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 3rem 0;
+ 
+}
+.meetup img{
+   width: 50%;
+   height:auto;
+   padding: 2rem;
+    
+}
+.meetup h1{
+   color:brown
 }
