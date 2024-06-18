@@ -8,6 +8,10 @@ const generateTarget = () => {
   };
   
   const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
+   if(humanGuess<0 || humanGuess>9){
+    alert('Wrong Number, pick once more!'); 
+    return;
+   }
     if (
       Math.abs(humanGuess - secretTarget) <=
       Math.abs(computerGuess - secretTarget)
