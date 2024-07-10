@@ -58,7 +58,7 @@ const validateCred = (arr) => {
       }
     }
     j++;
-    //console.log (`i=${i} j=${j}`)
+ 
     arrControl.unshift(numberControl);
   }
 
@@ -89,8 +89,8 @@ const findInvalidCards = (arr) => {
   return arrayOfFalse;
 };
 
-const invalidCards = findInvalidCards(batch);
-console.log(invalidCards);
+
+
 const idInvalidCardCompanies = (invalidCardsArray) => {
   let invalidCardsCompaniesArray = [];
   invalidCardsArray.forEach((element) => {
@@ -123,7 +123,21 @@ const idInvalidCardCompanies = (invalidCardsArray) => {
   return invalidCardsCompaniesArray;
 };
 
-console.log(idInvalidCardCompanies(invalidCards));
+
+const convertToNumber = (stringOfNumbers) => {   //conversion string to array of numbers
+    let arrayOfNumbers = [];
+    for (let i = 0; i < stringOfNumbers.length; i++) {
+      let num = parseInt(stringOfNumbers[i]);
+      arrayOfNumbers.push(num);
+    }
+    return arrayOfNumbers;
+  };
+  
+
+const invalidCards = findInvalidCards(batch);
+console.log(invalidCards);//nested array of invalid cards
+console.log(idInvalidCardCompanies(invalidCards));//array of companies that issued invalid cards
+console.log(convertToNumber('4539689887705798'))//conversion string to array of numbers
 
 
 
