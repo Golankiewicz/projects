@@ -1,0 +1,62 @@
+body {
+  background: #000;
+  color: #fff;
+  padding: 25px;
+  font-family: sans-serif;
+}
+.key1,
+.plus,
+.minus,
+.multi,
+.divide,
+.equal {
+  width: 50px;
+  height: 50px;
+  border: solid 2px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+}
+.equal {
+  margin-left: auto;
+  margin-right: 14px;
+  width: 123px;
+}
+.plus,
+.minus,
+.multi,
+.divide {
+  margin-left: 20px;
+}
+.cancel {
+  margin-left: 54px;
+}
+
+.screen {
+  width: 250px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.calculator {
+  width: 250px;
+  height: 350px;
+  border: solid 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.red {
+  background: red;
+}
+
+.key1:hover,
+.plus:hover,
+.equal:hover,
+.multi:hover,
+.divide:hover {
+  background: red;
+}
+.screen:hover {
+  background: none;
+}
